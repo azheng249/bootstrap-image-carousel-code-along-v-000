@@ -159,6 +159,49 @@ figcaption {
   }
 }
 
+/*/////// IMAGE CAROUSEL ////////*/
+#new-prop-carousel .carousel-caption p {
+  color: white;
+  display: none;
+}
+#new-prop-carousel .item img {
+  height: auto;
+}
+/*/////// IMAGE CAROUSEL STYLE ////////*/
+
+#new-prop-carousel .carousel-indicators, 
+#new-prop-carousel .carousel-inner div.carousel-caption,  
+#new-prop-carousel .carousel-inner div.carousel-caption *,
+#new-prop-carousel a.carousel-control,
+#new-prop-carousel a.carousel-control span {
+  background-color: rgba(255, 255, 255, 0);
+}
+#new-prop-carousel ol li {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px rgba(255, 255, 255, 0.5) solid;
+  padding: 5px;
+}
+#new-prop-carousel ol li.active {
+  background-color: rgba(255, 255, 255, 0.9)
+} 
+@media only screen and (min-width: 768px) {
+  #new-prop-carousel .item img {
+    height: 384px;
+  } 
+}
+@media only screen and (min-width: 992px) {
+  #new-prop-carousel .item img {
+    height: 496px;
+  } 
+  #new-prop-carousel .carousel-caption p {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #new-prop-carousel .item img {
+    height: 600px;
+  } 
+}
 /*/////// SOCIAL ////////*/
 #social {
   position: fixed;
